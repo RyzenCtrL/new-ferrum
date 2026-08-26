@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: theme("colors.paper");
+    color: theme("colors.ink");
+    font-family: theme("fontFamily.sans");
+  }
+  ::selection {
+    background-color: theme("colors.accent");
+    color: theme("colors.paper");
+  }
+  :focus-visible {
+    outline: 2px solid theme("colors.accent");
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* Blueprint-style registration marks: the page's signature motif.
+     Corner brackets echo technical-drawing crop marks; used on photography only. */
+  .frame-marks {
+    position: relative;
+  }
+  .frame-marks::before,
+  .frame-marks::after,
+  .frame-marks > .fm-tl,
+  .frame-marks > .fm-br {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-color: theme("colors.paper");
+    opacity: 0.9;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
+  .frame-marks::before {
+    top: 12px;
+    left: 12px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+  }
+  .frame-marks::after {
+    bottom: 12px;
+    right: 12px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .tick-rule {
+    background-image: repeating-linear-gradient(
+      to right,
+      theme("colors.line") 0,
+      theme("colors.line") 1px,
+      transparent 1px,
+      transparent 24px
+    );
+    height: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
