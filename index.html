@@ -1,548 +1,10 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
-<<<<<<< HEAD
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ferrum — металлоконструкции для частного дома</title>
-  <meta name="description" content="Навесы, заборы, откатные ворота и хозблоки на годы — с гарантией и точным расчётом до монтажа. Санкт-Петербург и Ленобласть." />
-
-  <!-- Шрифты: Onest (display), Golos Text (body), Martian Mono (utility) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&family=Martian+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-
-  <a class="skip-link" href="#main">К содержанию</a>
-
-  <!-- ══════════════════════════════════ 00 · НАВБАР ══════════════════════════════════ -->
-  <header class="nav" id="nav" data-nav>
-    <div class="container nav__inner">
-      <a class="wordmark" href="#top" aria-label="Ferrum — на главную">Ferrum<span class="dot">.</span></a>
-
-      <nav class="nav__links" aria-label="Основная навигация">
-        <a href="#categories">Навесы</a>
-        <a href="#categories">Заборы</a>
-        <a href="#categories">Ворота</a>
-        <a href="#projects">Проекты</a>
-        <a href="#materials">Качество</a>
-      </nav>
-
-      <div class="nav__actions">
-        <a class="nav__phone mono" href="tel:+78120000000">+7 (812) 000-00-00</a>
-        <a class="btn btn--primary btn--sm" href="#estimate"><span class="btn__label">Рассчитать</span> <span class="btn__arrow" aria-hidden="true">→</span></a>
-        <button class="nav__burger" type="button" aria-label="Меню" aria-expanded="false" data-burger>
-          <span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- Мобильное меню -->
-  <div class="mobile-menu" id="mobileMenu" data-mobile-menu hidden>
-    <nav class="mobile-menu__links" aria-label="Мобильная навигация">
-      <a href="#categories">Навесы</a>
-      <a href="#categories">Заборы</a>
-      <a href="#categories">Откатные ворота</a>
-      <a href="#categories">Хозблоки</a>
-      <a href="#projects">Проекты</a>
-      <a href="#materials">Качество</a>
-      <a href="#faq">Вопросы</a>
-    </nav>
-    <div class="mobile-menu__foot">
-      <a class="mono" href="tel:+78120000000">+7 (812) 000-00-00</a>
-      <a class="btn btn--primary" href="#estimate"><span class="btn__label">Рассчитать проект</span> <span class="btn__arrow" aria-hidden="true">→</span></a>
-    </div>
-  </div>
-
-  <span id="top"></span>
-  <main id="main">
-
-    <!-- ══════════════════════════════════ 01 · HERO ══════════════════════════════════ -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__media" data-media data-label="НАВЕС · ГЛАВНОЕ ФОТО">
-        <!-- Реальное фото: вставьте <img src="assets/img/hero.jpg" alt="Навес Ferrum"> внутрь этого блока -->
-      </div>
-      <div class="hero__scrim" aria-hidden="true"></div>
-
-      <div class="container">
-        <div class="hero__inner">
-        <p class="eyebrow hero__eyebrow">Металлоконструкции · с 2012</p>
-
-        <h1 class="hero__title" id="hero-title">
-          Металл, который<br />держит форму дома.
-        </h1>
-
-        <!-- Сигнатура: линия-чертёж, прочерчивается при загрузке -->
-        <svg class="signature" width="220" height="16" viewBox="0 0 220 16" fill="none" aria-hidden="true">
-          <path class="signature__path" d="M1 12 H196 V1" stroke="var(--brass)" stroke-width="2" stroke-linecap="square" />
-          <circle class="signature__dot" cx="210" cy="12" r="3" fill="var(--brass)" />
-        </svg>
-
-        <p class="hero__lead">
-          Навесы, заборы и ворота на годы — с гарантией
-          и точным расчётом до начала монтажа.
-        </p>
-
-        <div class="hero__cta">
-          <a class="btn btn--primary btn--lg" href="#estimate"><span class="btn__label">Рассчитать проект</span> <span class="btn__arrow" aria-hidden="true">→</span></a>
-          <a class="link" href="#projects">Смотреть работы</a>
-        </div>
-
-        <dl class="hero__stats">
-          <div class="stat">
-            <dt class="stat__num mono"><span data-count="12">0</span></dt>
-            <dd class="stat__label">лет на рынке</dd>
-          </div>
-          <div class="stat">
-            <dt class="stat__num mono"><span data-count="1400" data-suffix="+">0</span></dt>
-            <dd class="stat__label">проектов</dd>
-          </div>
-          <div class="stat">
-            <dt class="stat__num mono"><span data-count="5">0</span> лет</dt>
-            <dd class="stat__label">гарантия</dd>
-          </div>
-        </dl>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════ 02 · КАТЕГОРИИ (BENTO) ══════════════════════════════════ -->
-    <section class="section" id="categories" aria-labelledby="cat-title">
-      <div class="container">
-        <header class="section__head reveal">
-          <p class="eyebrow">Что мы делаем</p>
-          <h2 class="section__title" id="cat-title">Выберите направление</h2>
-        </header>
-
-        <div class="bento">
-          <a class="card card--feature reveal" href="#estimate">
-            <div class="card__media" data-media data-label="НАВЕСЫ · ФОТО"></div>
-            <div class="card__body">
-              <p class="eyebrow">Направление 01</p>
-              <h3 class="card__title">Навесы</h3>
-              <p class="card__text">Для авто, террас и входных групп. Индивидуальный расчёт под ваш участок.</p>
-              <span class="card__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-
-          <a class="card reveal" href="#estimate">
-            <div class="card__media" data-media data-label="ЗАБОРЫ · ФОТО"></div>
-            <div class="card__body">
-              <p class="eyebrow">02</p>
-              <h3 class="card__title">Заборы</h3>
-              <p class="card__text">Профлист, 3D-сетка, евроштакетник.</p>
-              <span class="card__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-
-          <a class="card reveal" href="#estimate">
-            <div class="card__media" data-media data-label="ВОРОТА · ФОТО"></div>
-            <div class="card__body">
-              <p class="eyebrow">03</p>
-              <h3 class="card__title">Откатные ворота</h3>
-              <p class="card__text">С автоматикой и без. Плавный ход на годы.</p>
-              <span class="card__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-
-          <a class="card reveal" href="#estimate">
-            <div class="card__media" data-media data-label="ХОЗБЛОКИ · ФОТО"></div>
-            <div class="card__body">
-              <p class="eyebrow">04</p>
-              <h3 class="card__title">Хозблоки</h3>
-              <span class="card__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-
-          <a class="card reveal" href="#estimate">
-            <div class="card__media" data-media data-label="СПОРТПЛОЩАДКИ · ФОТО"></div>
-            <div class="card__body">
-              <p class="eyebrow">05</p>
-              <h3 class="card__title">Спортплощадки</h3>
-              <span class="card__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-
-          <a class="card card--wide reveal" href="#estimate">
-            <div class="card__media" data-media data-label="ФУНДАМЕНТ · ФОТО"></div>
-            <div class="card__body">
-              <p class="eyebrow">06</p>
-              <h3 class="card__title">Свайный фундамент</h3>
-              <p class="card__text">Быстрая и надёжная основа под навесы, хозблоки и лёгкие постройки.</p>
-              <span class="card__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-
-          <a class="card card--wide reveal" href="#estimate">
-            <div class="card__media" data-media data-label="КОМПЛЕКТУЮЩИЕ · ФОТО"></div>
-            <div class="card__body">
-              <p class="eyebrow">07</p>
-              <h3 class="card__title">Комплектующие</h3>
-              <p class="card__text">Профиль, крепёж, автоматика и всё для сборки — в розницу и оптом.</p>
-              <span class="card__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════ 03 · КАК МЫ РАБОТАЕМ ══════════════════════════════════ -->
-    <section class="section" id="process" aria-labelledby="proc-title">
-      <div class="container process">
-        <header class="section__head process__head reveal">
-          <p class="eyebrow">Процесс</p>
-          <h2 class="section__title" id="proc-title">От заявки до готового объекта — 5 шагов</h2>
-        </header>
-
-        <ol class="steps">
-          <li class="step reveal">
-            <span class="step__num mono">01</span>
-            <div class="step__content">
-              <h3 class="step__title">Замер</h3>
-              <p class="step__text">Выезжаем на участок и снимаем размеры — бесплатно.</p>
-            </div>
-            <span class="step__line" aria-hidden="true"></span>
-          </li>
-          <li class="step reveal">
-            <span class="step__num mono">02</span>
-            <div class="step__content">
-              <h3 class="step__title">Расчёт и смета</h3>
-              <p class="step__text">Считаем металл и работу, фиксируем цену в договоре.</p>
-            </div>
-            <span class="step__line" aria-hidden="true"></span>
-          </li>
-          <li class="step reveal">
-            <span class="step__num mono">03</span>
-            <div class="step__content">
-              <h3 class="step__title">Изготовление</h3>
-              <p class="step__text">Варим и красим в собственном цеху по чертежу.</p>
-            </div>
-            <span class="step__line" aria-hidden="true"></span>
-          </li>
-          <li class="step reveal">
-            <span class="step__num mono">04</span>
-            <div class="step__content">
-              <h3 class="step__title">Монтаж</h3>
-              <p class="step__text">Устанавливаем на объекте под ключ и убираем за собой.</p>
-            </div>
-            <span class="step__line" aria-hidden="true"></span>
-          </li>
-          <li class="step reveal">
-            <span class="step__num mono">05</span>
-            <div class="step__content">
-              <h3 class="step__title">Гарантия</h3>
-              <p class="step__text">5 лет на конструкцию. Остаёмся на связи после сдачи.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════ 04 · ПРОЕКТЫ (тёмная секция) ══════════════════════════════════ -->
-    <section class="section section--dark" id="projects" aria-labelledby="proj-title">
-      <div class="container">
-        <header class="section__head section__head--split reveal">
-          <div>
-            <p class="eyebrow">Портфолио</p>
-            <h2 class="section__title" id="proj-title">Наши работы</h2>
-          </div>
-          <div class="filters" role="tablist" aria-label="Фильтр проектов">
-            <button class="filter is-active" type="button">Все</button>
-            <button class="filter" type="button">Навесы</button>
-            <button class="filter" type="button">Заборы</button>
-            <button class="filter" type="button">Ворота</button>
-          </div>
-        </header>
-
-        <div class="projects">
-          <figure class="project reveal">
-            <div class="project__media" data-media data-media--dark data-label="НАВЕС · ФОТО"></div>
-            <figcaption class="project__cap">
-              <h3 class="project__title">Навес для автомобиля</h3>
-              <p class="project__meta mono">Красное Село · 48 м²</p>
-            </figcaption>
-          </figure>
-          <figure class="project reveal">
-            <div class="project__media" data-media data-media--dark data-label="ВОРОТА · ФОТО"></div>
-            <figcaption class="project__cap">
-              <h3 class="project__title">Откатные ворота</h3>
-              <p class="project__meta mono">Пушкин · 4,2 м</p>
-            </figcaption>
-          </figure>
-          <figure class="project reveal">
-            <div class="project__media" data-media data-media--dark data-label="ЗАБОР · ФОТО"></div>
-            <figcaption class="project__cap">
-              <h3 class="project__title">Забор из профлиста</h3>
-              <p class="project__meta mono">Гатчина · 60 м</p>
-            </figcaption>
-          </figure>
-        </div>
-
-        <div class="projects__cta reveal">
-          <a class="btn btn--on-dark" href="#estimate">Смотреть все проекты <span class="btn__arrow" aria-hidden="true">→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════ 05 · МАТЕРИАЛЫ И ИНЖЕНЕРИЯ ══════════════════════════════════ -->
-    <section class="section" id="materials" aria-labelledby="mat-title">
-      <div class="container">
-        <header class="section__head reveal">
-          <p class="eyebrow">Качество</p>
-          <h2 class="section__title" id="mat-title">Из чего и как мы делаем</h2>
-        </header>
-
-        <div class="materials">
-          <div class="materials__media reveal" data-media data-label="СВАРНОЙ УЗЕЛ · МАКРО"></div>
-
-          <dl class="specs reveal">
-            <div class="spec">
-              <dt class="spec__label mono">Металл</dt>
-              <dd class="spec__value mono">Проф. труба 60×60, 3 мм</dd>
-            </div>
-            <div class="spec">
-              <dt class="spec__label mono">Покрытие</dt>
-              <dd class="spec__value mono">Грунт + порошковая краска</dd>
-            </div>
-            <div class="spec">
-              <dt class="spec__label mono">Антикоррозия</dt>
-              <dd class="spec__value mono">Оцинковка · 25+ лет</dd>
-            </div>
-            <div class="spec">
-              <dt class="spec__label mono">Снеговая нагрузка</dt>
-              <dd class="spec__value mono">до 320 кг/м²</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════ 06 · ДОВЕРИЕ ══════════════════════════════════ -->
-    <section class="section" id="trust" aria-labelledby="trust-title">
-      <div class="container">
-        <h2 class="visually-hidden" id="trust-title">Нам доверяют</h2>
-
-        <dl class="counters reveal">
-          <div class="counter">
-            <dt class="counter__num mono"><span data-count="1400" data-suffix="+">0</span></dt>
-            <dd class="counter__label">проектов сдано</dd>
-          </div>
-          <div class="counter">
-            <dt class="counter__num mono"><span data-count="12">0</span></dt>
-            <dd class="counter__label">лет на рынке</dd>
-          </div>
-          <div class="counter">
-            <dt class="counter__num mono"><span data-count="5">0</span></dt>
-            <dd class="counter__label">лет гарантии</dd>
-          </div>
-          <div class="counter">
-            <dt class="counter__num mono"><span data-count="98">0</span>%</dt>
-            <dd class="counter__label">рекомендуют</dd>
-          </div>
-        </dl>
-
-        <div class="reviews">
-          <figure class="review reveal">
-            <blockquote class="review__quote">«Навес поставили за неделю, всё чётко по договору. Приятно, что цену не двигали после замера.»</blockquote>
-            <figcaption class="review__author">
-              <span class="review__avatar" data-media data-label="ФОТО"></span>
-              <span class="review__meta"><b>Игорь</b><span class="mono">Пушкин</span></span>
-            </figcaption>
-          </figure>
-          <figure class="review reveal">
-            <blockquote class="review__quote">«Ворота открываются бесшумно уже год. Автоматика работает даже в мороз, ни разу не подвела.»</blockquote>
-            <figcaption class="review__author">
-              <span class="review__avatar" data-media data-label="ФОТО"></span>
-              <span class="review__meta"><b>Мария</b><span class="mono">Гатчина</span></span>
-            </figcaption>
-          </figure>
-          <figure class="review reveal">
-            <blockquote class="review__quote">«Смету зафиксировали прямо на замере, без сюрпризов в конце. Забор стоит ровно, сварка аккуратная.»</blockquote>
-            <figcaption class="review__author">
-              <span class="review__avatar" data-media data-label="ФОТО"></span>
-              <span class="review__meta"><b>Пётр</b><span class="mono">Тосно</span></span>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════ 07 · БЫСТРЫЙ РАСЧЁТ ══════════════════════════════════ -->
-    <section class="section" id="estimate" aria-labelledby="est-title">
-      <div class="container">
-        <div class="estimate reveal">
-          <p class="eyebrow">Расчёт за 1 день</p>
-          <h2 class="estimate__title" id="est-title">Ответьте на 3 вопроса — пришлём смету</h2>
-
-          <form class="estimate__form" data-form novalidate>
-            <div class="field">
-              <label class="field__label" for="f-type">Что нужно</label>
-              <select class="field__input" id="f-type" name="type" required>
-                <option value="" disabled selected>Выберите</option>
-                <option>Навес</option>
-                <option>Забор</option>
-                <option>Откатные ворота</option>
-                <option>Хозблок</option>
-                <option>Другое</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label class="field__label" for="f-size">Размер / площадь</label>
-              <input class="field__input" id="f-size" name="size" type="text" placeholder="напр. 6×4 м" required />
-            </div>
-
-            <div class="field">
-              <label class="field__label" for="f-phone">Телефон</label>
-              <input class="field__input" id="f-phone" name="phone" type="tel" placeholder="+7 ___ ___-__-__" required />
-            </div>
-
-            <button class="btn btn--primary btn--lg estimate__submit" type="submit">
-              <span class="btn__label">Получить смету</span> <span class="btn__arrow" aria-hidden="true">→</span>
-            </button>
-
-            <p class="estimate__note"><span class="dot-brass" aria-hidden="true"></span> Без предоплаты за расчёт · перезвоним в течение 15 минут</p>
-          </form>
-
-          <!-- Экран успеха (заглушка — лид пока никуда не отправляется) -->
-          <div class="estimate__success" data-success hidden role="status">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-              <path class="check" d="M12 25 L21 34 L37 15" stroke="var(--brass)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <h3 class="estimate__success-title">Заявка принята</h3>
-            <p class="estimate__success-text">Мы свяжемся с вами в течение 15 минут и подготовим смету.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════ 08 · ГЕОГРАФИЯ ══════════════════════════════════ -->
-    <section class="section" id="geo" aria-labelledby="geo-title">
-      <div class="container geo">
-        <header class="section__head reveal">
-          <p class="eyebrow">Где работаем</p>
-          <h2 class="section__title" id="geo-title">Санкт-Петербург и Ленобласть</h2>
-        </header>
-
-        <div class="geo__grid">
-          <ul class="geo__list reveal">
-            <li>Пушкин</li><li>Гатчина</li><li>Тосно</li>
-            <li>Красное Село</li><li>Всеволожск</li><li>Колпино</li>
-            <li>Павловск</li><li>Сертолово</li>
-          </ul>
-          <div class="geo__map reveal" data-media data-label="КАРТА ЗОНЫ ВЫЕЗДА"></div>
-        </div>
-        <p class="geo__note reveal"><span class="dot-brass" aria-hidden="true"></span> Выезд замерщика — бесплатно</p>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════ 09 · FAQ ══════════════════════════════════ -->
-    <section class="section" id="faq" aria-labelledby="faq-title">
-      <div class="container faq">
-        <header class="section__head faq__head reveal">
-          <p class="eyebrow">Вопросы</p>
-          <h2 class="section__title" id="faq-title">Частые вопросы</h2>
-        </header>
-
-        <div class="accordion">
-          <div class="acc reveal">
-            <button class="acc__q" type="button" aria-expanded="false" data-acc>
-              <span>Сколько стоит выезд замерщика?</span>
-              <span class="acc__icon" aria-hidden="true"></span>
-            </button>
-            <div class="acc__a"><p>Выезд и замер бесплатны в пределах зоны обслуживания. Замерщик приедет в удобное время и сразу оценит объём работ.</p></div>
-          </div>
-          <div class="acc reveal">
-            <button class="acc__q" type="button" aria-expanded="false" data-acc>
-              <span>Какая предоплата?</span>
-              <span class="acc__icon" aria-hidden="true"></span>
-            </button>
-            <div class="acc__a"><p>Обычно 50% при заключении договора и 50% после монтажа. За сам расчёт и смету предоплата не берётся.</p></div>
-          </div>
-          <div class="acc reveal">
-            <button class="acc__q" type="button" aria-expanded="false" data-acc>
-              <span>Сколько идёт изготовление и монтаж?</span>
-              <span class="acc__icon" aria-hidden="true"></span>
-            </button>
-            <div class="acc__a"><p>В среднем от 5 до 14 дней в зависимости от сложности конструкции и загрузки цеха. Точный срок фиксируем в договоре.</p></div>
-          </div>
-          <div class="acc reveal">
-            <button class="acc__q" type="button" aria-expanded="false" data-acc>
-              <span>Что входит в гарантию?</span>
-              <span class="acc__icon" aria-hidden="true"></span>
-            </button>
-            <div class="acc__a"><p>Гарантия 5 лет распространяется на сварные соединения, покрытие и целостность конструкции при штатной эксплуатации.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════ 10 · CTA-ПОЛОСА (тёмная) ══════════════════════════════════ -->
-    <section class="section cta-band section--dark" aria-labelledby="cta-title">
-      <div class="container cta-band__inner reveal">
-        <h2 class="cta-band__title" id="cta-title">Обсудим ваш проект?</h2>
-        <p class="cta-band__text">Бесплатный замер и точная смета — без обязательств.</p>
-        <div class="cta-band__actions">
-          <a class="btn btn--on-dark btn--lg" href="#estimate">Оставить заявку <span class="btn__arrow" aria-hidden="true">→</span></a>
-          <a class="cta-band__phone mono" href="tel:+78120000000">+7 (812) 000-00-00</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ══════════════════════════════════ 11 · ФУТЕР ══════════════════════════════════ -->
-  <footer class="footer section--dark">
-    <div class="container">
-      <div class="footer__cols">
-        <div class="footer__col">
-          <p class="footer__head mono">Продукция</p>
-          <a href="#categories">Навесы</a>
-          <a href="#categories">Заборы</a>
-          <a href="#categories">Откатные ворота</a>
-          <a href="#categories">Хозблоки</a>
-          <a href="#categories">Спортплощадки</a>
-          <a href="#categories">Свайный фундамент</a>
-        </div>
-        <div class="footer__col">
-          <p class="footer__head mono">Компания</p>
-          <a href="#materials">Качество</a>
-          <a href="#projects">Проекты</a>
-          <a href="#process">Как работаем</a>
-          <a href="#faq">Гарантия</a>
-        </div>
-        <div class="footer__col">
-          <p class="footer__head mono">Контакты</p>
-          <a class="mono" href="tel:+78120000000">+7 (812) 000-00-00</a>
-          <a class="mono" href="mailto:hello@ferrum.ru">hello@ferrum.ru</a>
-          <span class="footer__addr mono">г. Пушкин, ул. Примерная, 1</span>
-        </div>
-        <div class="footer__col">
-          <p class="footer__head mono">Мессенджеры</p>
-          <a href="#">WhatsApp</a>
-          <a href="#">Telegram</a>
-        </div>
-      </div>
-
-      <div class="footer__wordmark">Ferrum<span class="dot">.</span></div>
-
-      <div class="footer__legal mono">
-        <span>© 2026 Ferrum · ИНН 0000000000</span>
-        <a href="#">Политика конфиденциальности</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-=======
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>FERRUM — заборы, навесы, ворота, спортплощадки. От идеи до монтажа</title>
-<meta name="description" content="Металлоконструкции под ключ: заборы и ограждения, навесы, ворота, спортивные площадки, свайный фундамент, бытовки и модули, профильная труба. Бесплатная консультация." />
+<title>FERRUM вЂ” Р·Р°Р±РѕСЂС‹, РЅР°РІРµСЃС‹, РІРѕСЂРѕС‚Р°, СЃРїРѕСЂС‚РїР»РѕС‰Р°РґРєРё. РћС‚ РёРґРµРё РґРѕ РјРѕРЅС‚Р°Р¶Р°</title>
+<meta name="description" content="РњРµС‚Р°Р»Р»РѕРєРѕРЅСЃС‚СЂСѓРєС†РёРё РїРѕРґ РєР»СЋС‡: Р·Р°Р±РѕСЂС‹ Рё РѕРіСЂР°Р¶РґРµРЅРёСЏ, РЅР°РІРµСЃС‹, РІРѕСЂРѕС‚Р°, СЃРїРѕСЂС‚РёРІРЅС‹Рµ РїР»РѕС‰Р°РґРєРё, СЃРІР°Р№РЅС‹Р№ С„СѓРЅРґР°РјРµРЅС‚, Р±С‹С‚РѕРІРєРё Рё РјРѕРґСѓР»Рё, РїСЂРѕС„РёР»СЊРЅР°СЏ С‚СЂСѓР±Р°. Р‘РµСЃРїР»Р°С‚РЅР°СЏ РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ." />
 <meta name="robots" content="noindex, nofollow" />
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -551,8 +13,8 @@
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ru_RU" />
 <meta property="og:site_name" content="FERRUM" />
-<meta property="og:title" content="FERRUM — заборы, навесы, ворота, спортплощадки. От идеи до монтажа" />
-<meta property="og:description" content="Металлоконструкции под ключ: заборы, навесы, ворота, спортплощадки, свайный фундамент, бытовки и модули, профильная труба." />
+<meta property="og:title" content="FERRUM вЂ” Р·Р°Р±РѕСЂС‹, РЅР°РІРµСЃС‹, РІРѕСЂРѕС‚Р°, СЃРїРѕСЂС‚РїР»РѕС‰Р°РґРєРё. РћС‚ РёРґРµРё РґРѕ РјРѕРЅС‚Р°Р¶Р°" />
+<meta property="og:description" content="РњРµС‚Р°Р»Р»РѕРєРѕРЅСЃС‚СЂСѓРєС†РёРё РїРѕРґ РєР»СЋС‡: Р·Р°Р±РѕСЂС‹, РЅР°РІРµСЃС‹, РІРѕСЂРѕС‚Р°, СЃРїРѕСЂС‚РїР»РѕС‰Р°РґРєРё, СЃРІР°Р№РЅС‹Р№ С„СѓРЅРґР°РјРµРЅС‚, Р±С‹С‚РѕРІРєРё Рё РјРѕРґСѓР»Рё, РїСЂРѕС„РёР»СЊРЅР°СЏ С‚СЂСѓР±Р°." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -565,25 +27,25 @@
 <!-- ============ HEADER ============ -->
 <header data-header class="sticky top-0 z-50 bg-paper/95 backdrop-blur border-b border-transparent transition-shadow" id="top">
   <div class="max-w-content mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
-    <a href="#top" class="flex items-center gap-2.5" aria-label="FERRUM — на главную">
+    <a href="#top" class="flex items-center gap-2.5" aria-label="FERRUM вЂ” РЅР° РіР»Р°РІРЅСѓСЋ">
       <img src="/img/source/logo.png" alt="" width="22" height="34" class="h-7 w-auto" />
       <span class="font-display font-extrabold text-2xl tracking-tight leading-none">FERRUM</span>
     </a>
 
-    <nav class="hidden md:flex items-center gap-8 font-sans text-sm text-ink/80" aria-label="Основная навигация">
-      <a href="#catalog" class="hover:text-ink transition-colors">Услуги</a>
-      <a href="#process" class="hover:text-ink transition-colors">Как мы работаем</a>
-      <a href="#works" class="hover:text-ink transition-colors">Примеры работ</a>
-      <a href="#why" class="hover:text-ink transition-colors">Почему мы</a>
-      <a href="#contact" class="hover:text-ink transition-colors">Контакты</a>
+    <nav class="hidden md:flex items-center gap-8 font-sans text-sm text-ink/80" aria-label="РћСЃРЅРѕРІРЅР°СЏ РЅР°РІРёРіР°С†РёСЏ">
+      <a href="#catalog" class="hover:text-ink transition-colors">РЈСЃР»СѓРіРё</a>
+      <a href="#process" class="hover:text-ink transition-colors">РљР°Рє РјС‹ СЂР°Р±РѕС‚Р°РµРј</a>
+      <a href="#works" class="hover:text-ink transition-colors">РџСЂРёРјРµСЂС‹ СЂР°Р±РѕС‚</a>
+      <a href="#why" class="hover:text-ink transition-colors">РџРѕС‡РµРјСѓ РјС‹</a>
+      <a href="#contact" class="hover:text-ink transition-colors">РљРѕРЅС‚Р°РєС‚С‹</a>
     </nav>
 
     <div class="flex items-center gap-3 md:gap-5">
       <a href="tel:+79208814314" class="hidden sm:block font-mono text-sm text-ink/80 hover:text-ink transition-colors">+7 (920) 881-43-14</a>
       <a href="#contact" class="hidden md:inline-flex items-center bg-ink text-paper font-sans text-sm font-medium px-5 py-2.5 hover:bg-accent transition-colors">
-        Оставить заявку
+        РћСЃС‚Р°РІРёС‚СЊ Р·Р°СЏРІРєСѓ
       </a>
-      <button data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" class="md:hidden flex flex-col justify-center gap-1.5 w-9 h-9" aria-label="Открыть меню">
+      <button data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" class="md:hidden flex flex-col justify-center gap-1.5 w-9 h-9" aria-label="РћС‚РєСЂС‹С‚СЊ РјРµРЅСЋ">
         <span class="block w-6 h-px bg-ink"></span>
         <span class="block w-6 h-px bg-ink"></span>
         <span class="block w-4 h-px bg-ink"></span>
@@ -592,13 +54,13 @@
   </div>
 
   <nav id="mobile-nav" data-mobile-nav class="hidden md:hidden flex-col border-t border-line bg-paper px-5 py-4 gap-4 font-sans text-sm">
-    <a href="#catalog">Услуги</a>
-    <a href="#process">Как мы работаем</a>
-    <a href="#works">Примеры работ</a>
-    <a href="#why">Почему мы</a>
-    <a href="#contact">Контакты</a>
+    <a href="#catalog">РЈСЃР»СѓРіРё</a>
+    <a href="#process">РљР°Рє РјС‹ СЂР°Р±РѕС‚Р°РµРј</a>
+    <a href="#works">РџСЂРёРјРµСЂС‹ СЂР°Р±РѕС‚</a>
+    <a href="#why">РџРѕС‡РµРјСѓ РјС‹</a>
+    <a href="#contact">РљРѕРЅС‚Р°РєС‚С‹</a>
     <a href="tel:+79208814314" class="font-mono">+7 (920) 881-43-14</a>
-    <a href="#contact" class="inline-flex justify-center bg-ink text-paper px-5 py-2.5">Оставить заявку</a>
+    <a href="#contact" class="inline-flex justify-center bg-ink text-paper px-5 py-2.5">РћСЃС‚Р°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</a>
   </nav>
 </header>
 
@@ -608,23 +70,23 @@
 <section class="border-b border-line">
   <div class="max-w-content mx-auto px-5 md:px-8 grid md:grid-cols-2 gap-10 md:gap-16 items-center py-12 md:py-20">
     <div class="order-2 md:order-1 min-w-0">
-      <span class="font-mono text-xs tracking-widest uppercase text-accent">Металлоконструкции · Киевское шоссе</span>
+      <span class="font-mono text-xs tracking-widest uppercase text-accent">РњРµС‚Р°Р»Р»РѕРєРѕРЅСЃС‚СЂСѓРєС†РёРё В· РљРёРµРІСЃРєРѕРµ С€РѕСЃСЃРµ</span>
       <h1 class="font-display font-extrabold text-[12vw] leading-[0.92] md:text-6xl lg:text-7xl mt-3 md:mt-4 tracking-tight break-words">
-        Заборы, навесы,<br />ворота, спортплощадки<span class="text-accent">.</span>
+        Р—Р°Р±РѕСЂС‹, РЅР°РІРµСЃС‹,<br />РІРѕСЂРѕС‚Р°, СЃРїРѕСЂС‚РїР»РѕС‰Р°РґРєРё<span class="text-accent">.</span>
       </h1>
       <p class="font-sans text-base md:text-lg text-ink/75 mt-5 md:mt-6 max-w-md">
-        От идеи до монтажа. Проектируем, изготавливаем и монтируем металлоконструкции для участка — плюс свайный фундамент, бытовки и профильная труба.
+        РћС‚ РёРґРµРё РґРѕ РјРѕРЅС‚Р°Р¶Р°. РџСЂРѕРµРєС‚РёСЂСѓРµРј, РёР·РіРѕС‚Р°РІР»РёРІР°РµРј Рё РјРѕРЅС‚РёСЂСѓРµРј РјРµС‚Р°Р»Р»РѕРєРѕРЅСЃС‚СЂСѓРєС†РёРё РґР»СЏ СѓС‡Р°СЃС‚РєР° вЂ” РїР»СЋСЃ СЃРІР°Р№РЅС‹Р№ С„СѓРЅРґР°РјРµРЅС‚, Р±С‹С‚РѕРІРєРё Рё РїСЂРѕС„РёР»СЊРЅР°СЏ С‚СЂСѓР±Р°.
       </p>
       <div class="mt-8">
         <a href="#contact" class="inline-flex items-center gap-3 bg-ink text-paper font-sans font-medium px-7 py-4 hover:bg-accent transition-colors">
-          Бесплатная консультация
+          Р‘РµСЃРїР»Р°С‚РЅР°СЏ РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg>
         </a>
       </div>
     </div>
 
     <div class="order-1 md:order-2 frame-marks">
-      <img src="/img/source/cat-zabory.jpg" alt="Металлический забор с распашной калиткой и кирпичными столбами" class="w-full aspect-[4/3] object-cover" loading="eager" />
+      <img src="/img/source/cat-zabory.jpg" alt="РњРµС‚Р°Р»Р»РёС‡РµСЃРєРёР№ Р·Р°Р±РѕСЂ СЃ СЂР°СЃРїР°С€РЅРѕР№ РєР°Р»РёС‚РєРѕР№ Рё РєРёСЂРїРёС‡РЅС‹РјРё СЃС‚РѕР»Р±Р°РјРё" class="w-full aspect-[4/3] object-cover" loading="eager" />
     </div>
   </div>
 </section>
@@ -633,105 +95,105 @@
 <section id="catalog" class="max-w-content mx-auto px-5 md:px-8 py-16 md:py-24">
   <div class="reveal flex items-end justify-between gap-6 mb-10 md:mb-14">
     <div>
-      <span class="font-mono text-xs tracking-widest uppercase text-steel">01 — Каталог</span>
-      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight mt-2">Наши услуги</h2>
+      <span class="font-mono text-xs tracking-widest uppercase text-steel">01 вЂ” РљР°С‚Р°Р»РѕРі</span>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight mt-2">РќР°С€Рё СѓСЃР»СѓРіРё</h2>
     </div>
   </div>
 
   <div class="reveal grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-line border border-line">
-    <!-- Заборы -->
+    <!-- Р—Р°Р±РѕСЂС‹ -->
     <article class="bg-paper group">
       <div class="frame-marks overflow-hidden">
-        <img src="/img/source/cat-zabory.jpg" alt="Секция металлического забора с калиткой" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+        <img src="/img/source/cat-zabory.jpg" alt="РЎРµРєС†РёСЏ РјРµС‚Р°Р»Р»РёС‡РµСЃРєРѕРіРѕ Р·Р°Р±РѕСЂР° СЃ РєР°Р»РёС‚РєРѕР№" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
       </div>
       <div class="p-5">
         <span class="font-mono text-xs text-steel">01</span>
-        <h3 class="font-display font-bold text-xl mt-1">Заборы и ограждения</h3>
-        <p class="font-sans text-sm text-ink/70 mt-1.5">Металлические заборы и ограждения любой конфигурации — от чертежа до установки.</p>
+        <h3 class="font-display font-bold text-xl mt-1">Р—Р°Р±РѕСЂС‹ Рё РѕРіСЂР°Р¶РґРµРЅРёСЏ</h3>
+        <p class="font-sans text-sm text-ink/70 mt-1.5">РњРµС‚Р°Р»Р»РёС‡РµСЃРєРёРµ Р·Р°Р±РѕСЂС‹ Рё РѕРіСЂР°Р¶РґРµРЅРёСЏ Р»СЋР±РѕР№ РєРѕРЅС„РёРіСѓСЂР°С†РёРё вЂ” РѕС‚ С‡РµСЂС‚РµР¶Р° РґРѕ СѓСЃС‚Р°РЅРѕРІРєРё.</p>
       </div>
     </article>
 
-    <!-- Навесы -->
+    <!-- РќР°РІРµСЃС‹ -->
     <article class="bg-paper group">
       <div class="frame-marks overflow-hidden">
-        <img src="/img/source/cat-navesy.jpg" alt="Навес с двускатной кровлей" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+        <img src="/img/source/cat-navesy.jpg" alt="РќР°РІРµСЃ СЃ РґРІСѓСЃРєР°С‚РЅРѕР№ РєСЂРѕРІР»РµР№" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
       </div>
       <div class="p-5">
         <span class="font-mono text-xs text-steel">02</span>
-        <h3 class="font-display font-bold text-xl mt-1">Навесы</h3>
-        <p class="font-sans text-sm text-ink/70 mt-1.5">Навесы для автомобиля, зоны отдыха и хозяйственных нужд.</p>
+        <h3 class="font-display font-bold text-xl mt-1">РќР°РІРµСЃС‹</h3>
+        <p class="font-sans text-sm text-ink/70 mt-1.5">РќР°РІРµСЃС‹ РґР»СЏ Р°РІС‚РѕРјРѕР±РёР»СЏ, Р·РѕРЅС‹ РѕС‚РґС‹С…Р° Рё С…РѕР·СЏР№СЃС‚РІРµРЅРЅС‹С… РЅСѓР¶Рґ.</p>
       </div>
     </article>
 
-    <!-- Ворота — no source photo available -->
+    <!-- Р’РѕСЂРѕС‚Р° вЂ” no source photo available -->
     <article class="bg-paper group">
       <div class="frame-marks overflow-hidden bg-ink/5 aspect-[4/3] flex items-center justify-center border-b border-line">
-        <span class="font-mono text-xs text-steel text-center px-4">[ фото ворот — добавить ]</span>
+        <span class="font-mono text-xs text-steel text-center px-4">[ С„РѕС‚Рѕ РІРѕСЂРѕС‚ вЂ” РґРѕР±Р°РІРёС‚СЊ ]</span>
       </div>
       <div class="p-5">
         <span class="font-mono text-xs text-steel">03</span>
-        <h3 class="font-display font-bold text-xl mt-1">Ворота</h3>
-        <p class="font-sans text-sm text-ink/70 mt-1.5">Ворота под ваш участок и въездную группу.</p>
+        <h3 class="font-display font-bold text-xl mt-1">Р’РѕСЂРѕС‚Р°</h3>
+        <p class="font-sans text-sm text-ink/70 mt-1.5">Р’РѕСЂРѕС‚Р° РїРѕРґ РІР°С€ СѓС‡Р°СЃС‚РѕРє Рё РІСЉРµР·РґРЅСѓСЋ РіСЂСѓРїРїСѓ.</p>
       </div>
     </article>
 
-    <!-- Спортплощадки -->
+    <!-- РЎРїРѕСЂС‚РїР»РѕС‰Р°РґРєРё -->
     <article class="bg-paper group">
       <div class="frame-marks overflow-hidden">
-        <img src="/img/source/cat-ploshadki.jpg" alt="Уличная спортивная площадка с тренажёрами" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+        <img src="/img/source/cat-ploshadki.jpg" alt="РЈР»РёС‡РЅР°СЏ СЃРїРѕСЂС‚РёРІРЅР°СЏ РїР»РѕС‰Р°РґРєР° СЃ С‚СЂРµРЅР°Р¶С‘СЂР°РјРё" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
       </div>
       <div class="p-5">
         <span class="font-mono text-xs text-steel">04</span>
-        <h3 class="font-display font-bold text-xl mt-1">Спортивные площадки</h3>
-        <p class="font-sans text-sm text-ink/70 mt-1.5">Спортивные площадки и уличные тренажёры под ключ.</p>
+        <h3 class="font-display font-bold text-xl mt-1">РЎРїРѕСЂС‚РёРІРЅС‹Рµ РїР»РѕС‰Р°РґРєРё</h3>
+        <p class="font-sans text-sm text-ink/70 mt-1.5">РЎРїРѕСЂС‚РёРІРЅС‹Рµ РїР»РѕС‰Р°РґРєРё Рё СѓР»РёС‡РЅС‹Рµ С‚СЂРµРЅР°Р¶С‘СЂС‹ РїРѕРґ РєР»СЋС‡.</p>
       </div>
     </article>
 
-    <!-- Свайный фундамент -->
+    <!-- РЎРІР°Р№РЅС‹Р№ С„СѓРЅРґР°РјРµРЅС‚ -->
     <article class="bg-paper group">
       <div class="frame-marks overflow-hidden">
-        <img src="/img/source/cat-svainy-fundament.jpg" alt="Сварной каркас на свайном фундаменте на участке" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+        <img src="/img/source/cat-svainy-fundament.jpg" alt="РЎРІР°СЂРЅРѕР№ РєР°СЂРєР°СЃ РЅР° СЃРІР°Р№РЅРѕРј С„СѓРЅРґР°РјРµРЅС‚Рµ РЅР° СѓС‡Р°СЃС‚РєРµ" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
       </div>
       <div class="p-5">
         <span class="font-mono text-xs text-steel">05</span>
-        <h3 class="font-display font-bold text-xl mt-1">Свайный фундамент</h3>
-        <p class="font-sans text-sm text-ink/70 mt-1.5">Свайный фундамент с монтажом под металлоконструкции.</p>
+        <h3 class="font-display font-bold text-xl mt-1">РЎРІР°Р№РЅС‹Р№ С„СѓРЅРґР°РјРµРЅС‚</h3>
+        <p class="font-sans text-sm text-ink/70 mt-1.5">РЎРІР°Р№РЅС‹Р№ С„СѓРЅРґР°РјРµРЅС‚ СЃ РјРѕРЅС‚Р°Р¶РѕРј РїРѕРґ РјРµС‚Р°Р»Р»РѕРєРѕРЅСЃС‚СЂСѓРєС†РёРё.</p>
       </div>
     </article>
 
-    <!-- Бытовки и модули -->
+    <!-- Р‘С‹С‚РѕРІРєРё Рё РјРѕРґСѓР»Рё -->
     <article class="bg-paper group">
       <div class="frame-marks overflow-hidden">
-        <img src="/img/source/cat-bytovki.jpg" alt="Модульная бытовка с панорамным остеклением" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+        <img src="/img/source/cat-bytovki.jpg" alt="РњРѕРґСѓР»СЊРЅР°СЏ Р±С‹С‚РѕРІРєР° СЃ РїР°РЅРѕСЂР°РјРЅС‹Рј РѕСЃС‚РµРєР»РµРЅРёРµРј" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
       </div>
       <div class="p-5">
         <span class="font-mono text-xs text-steel">06</span>
-        <h3 class="font-display font-bold text-xl mt-1">Бытовки и модули</h3>
-        <p class="font-sans text-sm text-ink/70 mt-1.5">Бытовки и модульные конструкции для участка.</p>
+        <h3 class="font-display font-bold text-xl mt-1">Р‘С‹С‚РѕРІРєРё Рё РјРѕРґСѓР»Рё</h3>
+        <p class="font-sans text-sm text-ink/70 mt-1.5">Р‘С‹С‚РѕРІРєРё Рё РјРѕРґСѓР»СЊРЅС‹Рµ РєРѕРЅСЃС‚СЂСѓРєС†РёРё РґР»СЏ СѓС‡Р°СЃС‚РєР°.</p>
       </div>
     </article>
 
-    <!-- Профильная труба -->
+    <!-- РџСЂРѕС„РёР»СЊРЅР°СЏ С‚СЂСѓР±Р° -->
     <article class="bg-paper group">
       <div class="frame-marks overflow-hidden">
-        <img src="/img/source/cat-profilnaya-truba.jpg" alt="Профильная труба на складе" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+        <img src="/img/source/cat-profilnaya-truba.jpg" alt="РџСЂРѕС„РёР»СЊРЅР°СЏ С‚СЂСѓР±Р° РЅР° СЃРєР»Р°РґРµ" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
       </div>
       <div class="p-5">
         <span class="font-mono text-xs text-steel">07</span>
-        <h3 class="font-display font-bold text-xl mt-1">Профильная труба</h3>
-        <p class="font-sans text-sm text-ink/70 mt-1.5">Профильная труба для каркасов и конструкций.</p>
+        <h3 class="font-display font-bold text-xl mt-1">РџСЂРѕС„РёР»СЊРЅР°СЏ С‚СЂСѓР±Р°</h3>
+        <p class="font-sans text-sm text-ink/70 mt-1.5">РџСЂРѕС„РёР»СЊРЅР°СЏ С‚СЂСѓР±Р° РґР»СЏ РєР°СЂРєР°СЃРѕРІ Рё РєРѕРЅСЃС‚СЂСѓРєС†РёР№.</p>
       </div>
     </article>
 
-    <!-- Сваи -->
+    <!-- РЎРІР°Рё -->
     <article class="bg-paper group">
       <div class="frame-marks overflow-hidden">
-        <img src="/img/source/cat-svai.jpg" alt="Винтовые сваи и оголовки" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+        <img src="/img/source/cat-svai.jpg" alt="Р’РёРЅС‚РѕРІС‹Рµ СЃРІР°Рё Рё РѕРіРѕР»РѕРІРєРё" class="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
       </div>
       <div class="p-5">
         <span class="font-mono text-xs text-steel">08</span>
-        <h3 class="font-display font-bold text-xl mt-1">Сваи и комплектующие</h3>
-        <p class="font-sans text-sm text-ink/70 mt-1.5">Сваи и комплектующие для монтажа металлоконструкций.</p>
+        <h3 class="font-display font-bold text-xl mt-1">РЎРІР°Рё Рё РєРѕРјРїР»РµРєС‚СѓСЋС‰РёРµ</h3>
+        <p class="font-sans text-sm text-ink/70 mt-1.5">РЎРІР°Рё Рё РєРѕРјРїР»РµРєС‚СѓСЋС‰РёРµ РґР»СЏ РјРѕРЅС‚Р°Р¶Р° РјРµС‚Р°Р»Р»РѕРєРѕРЅСЃС‚СЂСѓРєС†РёР№.</p>
       </div>
     </article>
   </div>
@@ -741,31 +203,31 @@
 <section id="process" class="border-t border-line bg-ink text-paper">
   <div class="max-w-content mx-auto px-5 md:px-8 py-16 md:py-24">
     <div class="reveal mb-12 md:mb-16">
-      <span class="font-mono text-xs tracking-widest uppercase text-paper/50">02 — Порядок работы</span>
-      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight mt-2">Как мы работаем</h2>
+      <span class="font-mono text-xs tracking-widest uppercase text-paper/50">02 вЂ” РџРѕСЂСЏРґРѕРє СЂР°Р±РѕС‚С‹</span>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight mt-2">РљР°Рє РјС‹ СЂР°Р±РѕС‚Р°РµРј</h2>
     </div>
 
     <div class="reveal tick-rule mb-2"></div>
     <ol class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
       <li class="reveal">
         <span class="font-mono text-sm text-accent">01</span>
-        <h3 class="font-display font-bold text-2xl mt-2">Заявка</h3>
-        <p class="font-sans text-sm text-paper/65 mt-2">Оставляете контакты и коротко описываете задачу.</p>
+        <h3 class="font-display font-bold text-2xl mt-2">Р—Р°СЏРІРєР°</h3>
+        <p class="font-sans text-sm text-paper/65 mt-2">РћСЃС‚Р°РІР»СЏРµС‚Рµ РєРѕРЅС‚Р°РєС‚С‹ Рё РєРѕСЂРѕС‚РєРѕ РѕРїРёСЃС‹РІР°РµС‚Рµ Р·Р°РґР°С‡Сѓ.</p>
       </li>
       <li class="reveal">
         <span class="font-mono text-sm text-accent">02</span>
-        <h3 class="font-display font-bold text-2xl mt-2">Консультация</h3>
-        <p class="font-sans text-sm text-paper/65 mt-2">Обсуждаем участок, материалы и объём работ — бесплатно.</p>
+        <h3 class="font-display font-bold text-2xl mt-2">РљРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ</h3>
+        <p class="font-sans text-sm text-paper/65 mt-2">РћР±СЃСѓР¶РґР°РµРј СѓС‡Р°СЃС‚РѕРє, РјР°С‚РµСЂРёР°Р»С‹ Рё РѕР±СЉС‘Рј СЂР°Р±РѕС‚ вЂ” Р±РµСЃРїР»Р°С‚РЅРѕ.</p>
       </li>
       <li class="reveal">
         <span class="font-mono text-sm text-accent">03</span>
-        <h3 class="font-display font-bold text-2xl mt-2">Расчёт</h3>
-        <p class="font-sans text-sm text-paper/65 mt-2">Считаем смету под ваши параметры и участок.</p>
+        <h3 class="font-display font-bold text-2xl mt-2">Р Р°СЃС‡С‘С‚</h3>
+        <p class="font-sans text-sm text-paper/65 mt-2">РЎС‡РёС‚Р°РµРј СЃРјРµС‚Сѓ РїРѕРґ РІР°С€Рё РїР°СЂР°РјРµС‚СЂС‹ Рё СѓС‡Р°СЃС‚РѕРє.</p>
       </li>
       <li class="reveal">
         <span class="font-mono text-sm text-accent">04</span>
-        <h3 class="font-display font-bold text-2xl mt-2">Монтаж</h3>
-        <p class="font-sans text-sm text-paper/65 mt-2">Изготавливаем конструкцию и монтируем на объекте.</p>
+        <h3 class="font-display font-bold text-2xl mt-2">РњРѕРЅС‚Р°Р¶</h3>
+        <p class="font-sans text-sm text-paper/65 mt-2">РР·РіРѕС‚Р°РІР»РёРІР°РµРј РєРѕРЅСЃС‚СЂСѓРєС†РёСЋ Рё РјРѕРЅС‚РёСЂСѓРµРј РЅР° РѕР±СЉРµРєС‚Рµ.</p>
       </li>
     </ol>
   </div>
@@ -774,23 +236,23 @@
 <!-- ============ WORKS (portfolio placeholders) ============ -->
 <section id="works" class="max-w-content mx-auto px-5 md:px-8 py-16 md:py-24">
   <div class="reveal mb-10 md:mb-14">
-    <span class="font-mono text-xs tracking-widest uppercase text-steel">03 — Объекты</span>
-    <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight mt-2">Примеры работ</h2>
-    <p class="font-sans text-sm text-ink/60 mt-3 max-w-md">Раздел готовится — добавим фотографии сданных объектов.</p>
+    <span class="font-mono text-xs tracking-widest uppercase text-steel">03 вЂ” РћР±СЉРµРєС‚С‹</span>
+    <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight mt-2">РџСЂРёРјРµСЂС‹ СЂР°Р±РѕС‚</h2>
+    <p class="font-sans text-sm text-ink/60 mt-3 max-w-md">Р Р°Р·РґРµР» РіРѕС‚РѕРІРёС‚СЃСЏ вЂ” РґРѕР±Р°РІРёРј С„РѕС‚РѕРіСЂР°С„РёРё СЃРґР°РЅРЅС‹С… РѕР±СЉРµРєС‚РѕРІ.</p>
   </div>
 
   <div class="reveal grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
     <div class="aspect-[4/3] border border-dashed border-line flex items-center justify-center text-center px-4">
-      <span class="font-mono text-xs text-steel">[ фото объекта — добавить ]</span>
+      <span class="font-mono text-xs text-steel">[ С„РѕС‚Рѕ РѕР±СЉРµРєС‚Р° вЂ” РґРѕР±Р°РІРёС‚СЊ ]</span>
     </div>
     <div class="aspect-[4/3] border border-dashed border-line flex items-center justify-center text-center px-4">
-      <span class="font-mono text-xs text-steel">[ фото объекта — добавить ]</span>
+      <span class="font-mono text-xs text-steel">[ С„РѕС‚Рѕ РѕР±СЉРµРєС‚Р° вЂ” РґРѕР±Р°РІРёС‚СЊ ]</span>
     </div>
     <div class="aspect-[4/3] border border-dashed border-line flex items-center justify-center text-center px-4">
-      <span class="font-mono text-xs text-steel">[ фото объекта — добавить ]</span>
+      <span class="font-mono text-xs text-steel">[ С„РѕС‚Рѕ РѕР±СЉРµРєС‚Р° вЂ” РґРѕР±Р°РІРёС‚СЊ ]</span>
     </div>
     <div class="aspect-[4/3] border border-dashed border-line flex items-center justify-center text-center px-4">
-      <span class="font-mono text-xs text-steel">[ фото объекта — добавить ]</span>
+      <span class="font-mono text-xs text-steel">[ С„РѕС‚Рѕ РѕР±СЉРµРєС‚Р° вЂ” РґРѕР±Р°РІРёС‚СЊ ]</span>
     </div>
   </div>
 </section>
@@ -799,37 +261,37 @@
 <section id="why" class="border-t border-line">
   <div class="max-w-content mx-auto px-5 md:px-8 py-16 md:py-24 grid md:grid-cols-[280px_1fr] gap-10 md:gap-16">
     <div class="reveal">
-      <span class="font-mono text-xs tracking-widest uppercase text-steel">04 — Почему мы</span>
-      <h2 class="font-display font-extrabold text-4xl tracking-tight mt-2">По факту</h2>
+      <span class="font-mono text-xs tracking-widest uppercase text-steel">04 вЂ” РџРѕС‡РµРјСѓ РјС‹</span>
+      <h2 class="font-display font-extrabold text-4xl tracking-tight mt-2">РџРѕ С„Р°РєС‚Сѓ</h2>
     </div>
 
     <ul class="divide-y divide-line border-t border-line">
       <li class="reveal py-6 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8">
-        <span class="font-mono text-xs text-accent shrink-0">—</span>
+        <span class="font-mono text-xs text-accent shrink-0">вЂ”</span>
         <div>
-          <h3 class="font-display font-bold text-xl">Полный цикл</h3>
-          <p class="font-sans text-sm text-ink/70 mt-1">От идеи до монтажа — без посредников и лишних согласований.</p>
+          <h3 class="font-display font-bold text-xl">РџРѕР»РЅС‹Р№ С†РёРєР»</h3>
+          <p class="font-sans text-sm text-ink/70 mt-1">РћС‚ РёРґРµРё РґРѕ РјРѕРЅС‚Р°Р¶Р° вЂ” Р±РµР· РїРѕСЃСЂРµРґРЅРёРєРѕРІ Рё Р»РёС€РЅРёС… СЃРѕРіР»Р°СЃРѕРІР°РЅРёР№.</p>
         </div>
       </li>
       <li class="reveal py-6 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8">
-        <span class="font-mono text-xs text-accent shrink-0">—</span>
+        <span class="font-mono text-xs text-accent shrink-0">вЂ”</span>
         <div>
-          <h3 class="font-display font-bold text-xl">Одна команда</h3>
-          <p class="font-sans text-sm text-ink/70 mt-1">Заборы, навесы, ворота и бытовки — одной командой, без субподряда.</p>
+          <h3 class="font-display font-bold text-xl">РћРґРЅР° РєРѕРјР°РЅРґР°</h3>
+          <p class="font-sans text-sm text-ink/70 mt-1">Р—Р°Р±РѕСЂС‹, РЅР°РІРµСЃС‹, РІРѕСЂРѕС‚Р° Рё Р±С‹С‚РѕРІРєРё вЂ” РѕРґРЅРѕР№ РєРѕРјР°РЅРґРѕР№, Р±РµР· СЃСѓР±РїРѕРґСЂСЏРґР°.</p>
         </div>
       </li>
       <li class="reveal py-6 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8">
-        <span class="font-mono text-xs text-accent shrink-0">—</span>
+        <span class="font-mono text-xs text-accent shrink-0">вЂ”</span>
         <div>
-          <h3 class="font-display font-bold text-xl">Спортплощадки под ключ</h3>
-          <p class="font-sans text-sm text-ink/70 mt-1">Отдельное направление — спортивные площадки и уличные тренажёры.</p>
+          <h3 class="font-display font-bold text-xl">РЎРїРѕСЂС‚РїР»РѕС‰Р°РґРєРё РїРѕРґ РєР»СЋС‡</h3>
+          <p class="font-sans text-sm text-ink/70 mt-1">РћС‚РґРµР»СЊРЅРѕРµ РЅР°РїСЂР°РІР»РµРЅРёРµ вЂ” СЃРїРѕСЂС‚РёРІРЅС‹Рµ РїР»РѕС‰Р°РґРєРё Рё СѓР»РёС‡РЅС‹Рµ С‚СЂРµРЅР°Р¶С‘СЂС‹.</p>
         </div>
       </li>
       <li class="reveal py-6 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8">
-        <span class="font-mono text-xs text-accent shrink-0">—</span>
+        <span class="font-mono text-xs text-accent shrink-0">вЂ”</span>
         <div>
-          <h3 class="font-display font-bold text-xl">Комплектующие в наличии</h3>
-          <p class="font-sans text-sm text-ink/70 mt-1">Сваи и комплектующие для металлоконструкций — отдельно от монтажа.</p>
+          <h3 class="font-display font-bold text-xl">РљРѕРјРїР»РµРєС‚СѓСЋС‰РёРµ РІ РЅР°Р»РёС‡РёРё</h3>
+          <p class="font-sans text-sm text-ink/70 mt-1">РЎРІР°Рё Рё РєРѕРјРїР»РµРєС‚СѓСЋС‰РёРµ РґР»СЏ РјРµС‚Р°Р»Р»РѕРєРѕРЅСЃС‚СЂСѓРєС†РёР№ вЂ” РѕС‚РґРµР»СЊРЅРѕ РѕС‚ РјРѕРЅС‚Р°Р¶Р°.</p>
         </div>
       </li>
     </ul>
@@ -840,20 +302,20 @@
 <section id="contact" class="border-t border-line bg-ink text-paper">
   <div class="max-w-content mx-auto px-5 md:px-8 py-16 md:py-24 grid lg:grid-cols-2 gap-12 lg:gap-20">
     <div class="reveal">
-      <span class="font-mono text-xs tracking-widest uppercase text-paper/50">05 — Заявка</span>
-      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight mt-2 mb-8">Оставить заявку</h2>
+      <span class="font-mono text-xs tracking-widest uppercase text-paper/50">05 вЂ” Р—Р°СЏРІРєР°</span>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight mt-2 mb-8">РћСЃС‚Р°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</h2>
 
       <form data-lead-form class="space-y-5 max-w-md" novalidate>
         <div>
-          <label for="name" class="block font-mono text-xs uppercase tracking-wide text-paper/60 mb-1.5">Имя</label>
+          <label for="name" class="block font-mono text-xs uppercase tracking-wide text-paper/60 mb-1.5">РРјСЏ</label>
           <input id="name" name="name" type="text" required
             class="w-full bg-transparent border-b border-paper/30 py-2.5 font-sans text-paper placeholder:text-paper/40 focus:border-accent outline-none transition-colors"
-            placeholder="Как к вам обращаться" />
+            placeholder="РљР°Рє Рє РІР°Рј РѕР±СЂР°С‰Р°С‚СЊСЃСЏ" />
           <p data-error-for="name" class="text-xs text-accent mt-1 min-h-[1em]"></p>
         </div>
 
         <div>
-          <label for="phone" class="block font-mono text-xs uppercase tracking-wide text-paper/60 mb-1.5">Телефон</label>
+          <label for="phone" class="block font-mono text-xs uppercase tracking-wide text-paper/60 mb-1.5">РўРµР»РµС„РѕРЅ</label>
           <input id="phone" name="phone" type="tel" required
             class="w-full bg-transparent border-b border-paper/30 py-2.5 font-sans text-paper placeholder:text-paper/40 focus:border-accent outline-none transition-colors"
             placeholder="+7 (___) ___-__-__" />
@@ -861,20 +323,20 @@
         </div>
 
         <div>
-          <label for="comment" class="block font-mono text-xs uppercase tracking-wide text-paper/60 mb-1.5">Комментарий</label>
+          <label for="comment" class="block font-mono text-xs uppercase tracking-wide text-paper/60 mb-1.5">РљРѕРјРјРµРЅС‚Р°СЂРёР№</label>
           <textarea id="comment" name="comment" rows="3"
             class="w-full bg-transparent border-b border-paper/30 py-2.5 font-sans text-paper placeholder:text-paper/40 focus:border-accent outline-none transition-colors resize-none"
-            placeholder="Что нужно сделать (необязательно)"></textarea>
+            placeholder="Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ (РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅРѕ)"></textarea>
         </div>
 
         <button type="submit" class="inline-flex items-center gap-3 bg-paper text-ink font-sans font-medium px-7 py-4 hover:bg-accent hover:text-paper transition-colors">
-          Отправить заявку
+          РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ
         </button>
       </form>
 
       <div data-form-success class="hidden max-w-md">
-        <h3 class="font-display font-bold text-2xl">Заявка принята</h3>
-        <p class="font-sans text-sm text-paper/70 mt-2">Мы свяжемся с вами по указанному номеру. Также можно позвонить сами:
+        <h3 class="font-display font-bold text-2xl">Р—Р°СЏРІРєР° РїСЂРёРЅСЏС‚Р°</h3>
+        <p class="font-sans text-sm text-paper/70 mt-2">РњС‹ СЃРІСЏР¶РµРјСЃСЏ СЃ РІР°РјРё РїРѕ СѓРєР°Р·Р°РЅРЅРѕРјСѓ РЅРѕРјРµСЂСѓ. РўР°РєР¶Рµ РјРѕР¶РЅРѕ РїРѕР·РІРѕРЅРёС‚СЊ СЃР°РјРё:
           <a href="tel:+79208814314" class="underline hover:text-accent">+7 (920) 881-43-14</a>.
         </p>
       </div>
@@ -883,7 +345,7 @@
     <div class="reveal">
       <dl class="space-y-6 font-sans mb-8">
         <div>
-          <dt class="font-mono text-xs uppercase tracking-wide text-paper/50">Телефон</dt>
+          <dt class="font-mono text-xs uppercase tracking-wide text-paper/50">РўРµР»РµС„РѕРЅ</dt>
           <dd class="mt-1"><a href="tel:+79208814314" class="text-2xl font-display font-bold hover:text-accent transition-colors">+7 (920) 881-43-14</a></dd>
         </div>
         <div>
@@ -891,15 +353,15 @@
           <dd class="mt-1"><a href="mailto:svrubts0v@yandex.ru" class="text-lg hover:text-accent transition-colors">svrubts0v@yandex.ru</a></dd>
         </div>
         <div>
-          <dt class="font-mono text-xs uppercase tracking-wide text-paper/50">Адрес</dt>
-          <dd class="mt-1 text-lg">Киевское шоссе, 78</dd>
+          <dt class="font-mono text-xs uppercase tracking-wide text-paper/50">РђРґСЂРµСЃ</dt>
+          <dd class="mt-1 text-lg">РљРёРµРІСЃРєРѕРµ С€РѕСЃСЃРµ, 78</dd>
         </div>
       </dl>
 
       <div class="frame-marks border border-paper/20">
         <iframe
-          title="Киевское шоссе, 78 на карте"
-          src="https://yandex.ru/map-widget/v1/?text=Киевское%20шоссе%2C%2078&z=15"
+          title="РљРёРµРІСЃРєРѕРµ С€РѕСЃСЃРµ, 78 РЅР° РєР°СЂС‚Рµ"
+          src="https://yandex.ru/map-widget/v1/?text=РљРёРµРІСЃРєРѕРµ%20С€РѕСЃСЃРµ%2C%2078&z=15"
           class="w-full aspect-[4/3] grayscale-[40%]"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
@@ -917,10 +379,9 @@
     <img src="/img/source/logo.png" alt="" width="16" height="24" class="h-5 w-auto opacity-80" />
     <span class="font-display font-extrabold text-lg tracking-tight">FERRUM</span>
   </div>
-  <p class="font-mono text-xs text-steel">Киевское шоссе, 78 · +7 (920) 881-43-14</p>
-  <p class="font-mono text-xs text-steel">© <span data-year>2026</span> FERRUM</p>
+  <p class="font-mono text-xs text-steel">РљРёРµРІСЃРєРѕРµ С€РѕСЃСЃРµ, 78 В· +7 (920) 881-43-14</p>
+  <p class="font-mono text-xs text-steel">В© <span data-year>2026</span> FERRUM</p>
 </footer>
 
->>>>>>> e11ff171ef3341a030dfabb939853edf1c76a48d
 </body>
 </html>
